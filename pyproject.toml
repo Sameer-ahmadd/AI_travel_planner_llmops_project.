@@ -1,0 +1,25 @@
+[project]
+name = "ai-travel-planner"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain>=0.3.27",
+    "langchain-community>=0.3.27",
+    "langchain-core>=0.3.72",
+    "langchain-groq>=0.3.7",
+    "loguru>=0.7.3",
+    "pydantic>=2.11.7",
+    "sr>=0.1.0",
+    "src",
+    "streamlit>=1.48.0",
+]
+
+[tool.uv.workspace]
+members = [
+    "src",
+]
+
+[tool.uv.sources]
+src = { workspace = true }
